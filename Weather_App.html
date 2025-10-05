@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛅</text></svg>">    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <div class="search-container">
+                <input type="text" id="citySearch" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+                <button id="locationBtn" title="Use my location">📍</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="current-weather" id="currentWeather"></div>
+            <div class="forecast-container" id="forecastContainer"></div>
+            <div class="additional-info">
+                <div class="air-quality" id="airQuality"></div>
+                <div id="weatherMap"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data provided by Open-Meteo API</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
